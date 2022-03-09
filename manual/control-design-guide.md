@@ -6,7 +6,7 @@
 
 ### 设计原则
 
-### 组件属性
+### 控件属性
 
 属性列表：
 
@@ -14,8 +14,8 @@
 | --- | --- | --- | --- |
 | 自定义类名 | `className` | 视情况而定 | - |
 | 自定义样式 | `style` | `object` | - |
-| 当前值 | `value` | 视情况而定 | 受控 |
-| 默认值 | `defaultValue` | 视情况而定 | 非受控 |
+| 当前值 | `value` | 视情况而定 | - |
+| 默认值 | `defaultValue` | 视情况而定 | - |
 | 尺寸 | `size` | `'large' \| 'medium' \| 'small'` | - |
 | 形状 | `shape` | 视情况而定 | - |
 | 可清除 | `clearable` | `boolean` | - |
@@ -23,11 +23,11 @@
 | 唯一标识 | `flag` | `string \| number` | 相当于 `key`，默认生成时以数组索引为依据，而不是「第几个」 |
 | 当前激活项标识 | `activeFlag` | `string \| number` | 相当于 `activeKey`，默认生成时是数组索引下标 `0`，而不是「第一个」的 `1` |
 | 数据源 | `dataSource` | `object \| object[]` | - |
-| 位置 | `placement` | 视情况而定 | 有的组件可以指定出现（放置）的「位置」，这种场景用 `placement` 而不用 `position` |
+| 位置 | `placement` | 视情况而定 | 有的控件可以指定出现（放置）的「位置」，这种场景用 `placement` 而不用 `position` |
 | 触发方式 | `trigger` | 视情况而定 | - |
 | 弹出层类名 | `popupClassName` | 视情况而定 | - |
 
-### 组件事件
+### 控件事件
 
 事件列表：
 
