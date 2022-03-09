@@ -5,7 +5,7 @@
 </p>
 <h3 align="center">Petals</h3>
 <p align="center">
-  Born for component-based front-end web development, and provides atomic UI components.
+  Born for component-based front-end development, and provides atomic controls (UI components).
   <br>
   <a href="https://oss.ourai.ws/petals/docs/"><strong>Explore Petals docs »</strong></a>
 </p>
