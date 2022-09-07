@@ -1,0 +1,27 @@
+{
+  "name": "@petals/website",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf .asset-cache",
+    "start": "rake run",
+    "predeploy": "npm run clean",
+    "deploy": "rake deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petals-ui/.github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petals-ui/.github/issues"
+  },
+  "homepage": "https://petals.fxxk.design/",
+  "devDependencies": {
+    "handie": "^1.0.8"
+  }
+}
