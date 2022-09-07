@@ -1,7 +1,1 @@
-# Things about Petals
-
-Let's talk something about Petals.
-
-## Table of Contents
-
-- [Developer Manual](manual/readme.md) (Chinese)
+English | [简体中文](./README.zh-CN.md)
