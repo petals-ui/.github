@@ -1,15 +1,15 @@
 {
-  "name": "@petals/website",
+  "name": "@petals/meta",
   "version": "0.0.0",
   "description": "",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf .asset-cache",
-    "start": "rake run",
-    "predeploy": "npm run clean",
-    "deploy": "rake deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./build",
+    "clean:site": "rm -rf ./site/.asset-cache",
+    "start": "cd ./site && rake run",
+    "predeploy": "npm run clean:site",
+    "deploy": "cd ./site && rake deploy"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://petals.fxxk.design/",
   "devDependencies": {
-    "handie": "^1.0.8"
+    "handie": "^1.0.8",
+    "js-yaml": "^3.14.0"
   }
 }

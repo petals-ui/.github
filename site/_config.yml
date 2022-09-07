@@ -7,6 +7,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  controls:
+    output: true
+    permalink: /:collection/:path/
 
 # Handling Reading
 exclude:
@@ -78,6 +81,23 @@ defaults:
         slug: ourai
         twitter: ourairyu
       siblings: true
+  - scope:
+      path: ""
+      type: controls
+    values:
+      layout: control
+      css:
+        - pages/post
+      js:
+        - initializers/time
+        - initializers/lazyload
+      author:
+        name: 欧雷
+        email: ourairyu@gmail.com
+        uri: https://ourai.ws/
+        slug: ourai
+        twitter: ourairyu
+      comments: false
 
 
 
