@@ -1,23 +1,27 @@
 ---
-title: 控件
+title: 控件总览
 permalink: /controls/
 comments: false
 ---
 
-<!-- <section>
-  <dl>
-    {% for id in site.data.notes.note.sequence reversed %}
-      {% assign note = site.data.notes.note.items[id] %}
-      {% assign note_id = note.slug | default: note.id %}
-      <dt>
-        <a href="/notes/{{ note_id }}/">{{ note.title }}</a>
-      </dt>
-      {% if note.description %}<dd>{{ note.description }}</dd>{% endif %}
-    {% endfor %}
-  </dl>
-</section> -->
+<section>
+  <h2>实体控件</h2>
+  {% for t in site.data.control-categories.sequence %}
+    {% assign controls = site.data.controls.classified[t] %}
+    {% if controls and controls.size %}
+      <h3>{{ site.data.control-categories.items[t].name }} ({{ controls.size }})</h3>
+      <ul>
+        {% for c in controls %}
+          {% assign control = site.data.controls.items[c] %}
+          <li>
+            <a href="/controls/{{ c }}/">{{ control.componentName }} {{ control.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+</section>
 
 {% contentfor footer %}
-  {% include widgets/social.html %}
   {% include widgets/toc.html %}
 {% endcontentfor %}

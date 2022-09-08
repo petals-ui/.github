@@ -1,0 +1,26 @@
+items:
+  typography:
+    name: 排版
+  container:
+    name: 容器
+  layout:
+    name: 布局
+  information:
+    name: 信息
+  command:
+    name: 命令
+  view:
+    name: 视图
+  field:
+    name: 字段
+  navigation:
+    name: 导航
+sequence:
+  - typography
+  - container
+  - layout
+  - information
+  - command
+  - view
+  - field
+  - navigation
