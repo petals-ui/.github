@@ -5,10 +5,19 @@ comments: false
 ---
 
 <section>
+  <h2>虚拟控件</h2>
+  <ul>
+    {% for c in site.data.controls.classified.virtual %}
+      {% assign control = site.data.controls.items[c] %}
+      <li>
+        <a href="/controls/{{ c }}/">{{ control.componentName }} {{ control.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
   <h2>实体控件</h2>
   {% for t in site.data.control-categories.sequence %}
     {% assign controls = site.data.controls.classified[t] %}
-    {% if controls and controls.size %}
+    {% if t != "virtual" and controls and controls.size %}
       <h3>{{ site.data.control-categories.items[t].name }} ({{ controls.size }})</h3>
       <ul>
         {% for c in controls %}

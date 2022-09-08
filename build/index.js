@@ -19,7 +19,7 @@ function generateControls() {
     const controlSourceDir = `${controlDir}/${controlName}`;
     const metadata = readData(`${controlSourceDir}/metadata.yml`);
     const controlClassName = controlName.split('-').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('');
-    const frontMatter = safeDump({ title: `${controlClassName} ${metadata.title}` });
+    const frontMatter = safeDump({ title: metadata.title });
     const content = readData(`${controlSourceDir}/readme.md`)
       .replace(/src=\"([^\"]+)\"/g, (match, srcPath) => match.replace(srcPath, `{{ 'controls/${controlName}/${srcPath.replace(/.(jp(e)?g|png|gif|svg)/g, '')}' | asset_path }}`))
       .replace(/\n\`{3}([^\n]+)/g, (_, lang) => `\n{% highlight ${lang} %}`)

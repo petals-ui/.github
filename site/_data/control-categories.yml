@@ -1,4 +1,6 @@
 items:
+  virtual:
+    name: 虚拟
   typography:
     name: 排版
   container:
@@ -21,6 +23,6 @@ sequence:
   - layout
   - information
   - command
-  - view
   - field
+  - view
   - navigation
