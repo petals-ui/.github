@@ -11,3 +11,11 @@ _site/
 site/_data/controls.*
 site/_assets/images/controls/
 site/_controls/
+
+site/_data/utils.*
+site/_assets/images/utils/
+site/_utils/
+
+site/_data/guides.*
+site/_assets/images/guides/
+site/_guides/

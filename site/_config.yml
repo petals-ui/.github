@@ -10,6 +10,12 @@ collections:
   controls:
     output: true
     permalink: /:collection/:path/
+  utils:
+    output: true
+    permalink: /:collection/:path/
+  guides:
+    output: true
+    permalink: /:collection/:path/
 
 # Handling Reading
 exclude:
@@ -91,13 +97,26 @@ defaults:
       js:
         - initializers/time
         - initializers/lazyload
-      author:
-        name: 欧雷
-        email: ourairyu@gmail.com
-        uri: https://ourai.ws/
-        slug: ourai
-        twitter: ourairyu
-      comments: false
+  - scope:
+      path: ""
+      type: utils
+    values:
+      layout: util
+      css:
+        - pages/post
+      js:
+        - initializers/time
+        - initializers/lazyload
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: guide
+      css:
+        - pages/post
+      js:
+        - initializers/time
+        - initializers/lazyload
 
 
 
