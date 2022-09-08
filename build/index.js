@@ -12,6 +12,10 @@ scanAndSortByAsc(controlDir).forEach(controlName => {
   const controlSourceDir = `${controlDir}/${controlName}`;
   const { title } = readData(`${controlSourceDir}/metadata.yml`);
   const frontMatter = safeDump({ title: `${title} ${controlName.split('-').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('')}` });
+  const content = readData(`${controlSourceDir}/readme.md`)
+    .replace(/src=\"([^\"]+)\"/g, (match, srcPath) => match.replace(srcPath, `{{ 'notes/${id}/${srcPath.replace(/.(jp(e)?g)/g, '')}' | asset_path }}`))
+    .replace(/\n\`{3}([^\n]+)/g, (_, lang) => `\n{% highlight ${lang} %}`)
+    .replace(/\`{3}/g, '{% endhighlight %}');
 
-  saveData(`${controlDistDir}/${controlName}.md`, [`---\n${frontMatter}---\n`, readData(`${controlSourceDir}/readme.md`)].join('\n'));
+  saveData(`${controlDistDir}/${controlName}.md`, `---\n${frontMatter}---\n\n${content}\n`);
 });
