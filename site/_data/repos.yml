@@ -1,0 +1,67 @@
+cookbook:
+  name: 食用手册
+  collection: guides
+  toc:
+    - text: 指南总览
+      collection: pages
+      slug: guides
+    - text: 开发辅助
+      collection: utils
+      items:
+        - sass
+        - css
+    - text: 致开发者
+      items:
+        - control-design
+        - control-doc
+
+api:
+  name: API 参考
+  collection: controls
+  toc:
+    - text: 控件总览
+      collection: pages
+      slug: controls
+    - text: 虚拟控件
+      items:
+        - form-control
+        - menu
+    - text: 实体控件
+      items:
+        - text: 容器
+          items:
+            - card
+            - flex
+            - tabs
+            - toolbar
+        - text: 布局
+          items:
+            - grid
+            - layout
+        - text: 信息
+          items:
+            - icon
+        - text: 命令
+          items:
+            - button
+            - dropdown
+        - text: 字段
+          items:
+            - date-picker
+            - date-range-picker
+            - date-time-picker
+            - date-time-range-picker
+            - number-input
+            - password
+            - text-area
+            - text-input
+            - transfer
+            - url-input
+        - text: 视图
+          items:
+            - data-table
+        - text: 导航
+          items:
+            - link
+            - nav-menu
+            - steps

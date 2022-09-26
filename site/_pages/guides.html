@@ -1,21 +1,28 @@
 ---
-title: 指南
-permalink: /guides/
-comments: false
+title: 指南总览
+layout: guide
+css:
+  - pages/post
+  - pages/doc
+js:
+  - initializers/time
+  - initializers/lazyload
+repo: cookbook
 ---
 
-<section>
-  <h2>致开发者</h2>
-  <ul>
-    {% for slug in site.data.guides.sequence %}
-      <li>
-        <a href="/guides/{{ slug }}/">{{ site.data.guides.items[slug].title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
-
-{% contentfor footer %}
-  {% include widgets/social.html %}
-  {% include widgets/toc.html %}
-{% endcontentfor %}
+<h2>开发辅助</h2>
+<ul>
+  {% for slug in site.data.utils.sequence %}
+    <li>
+      <a href="/utils/{{ slug }}/">{{ site.data.utils.items[slug].title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<h2>致开发者</h2>
+<ul>
+  {% for slug in site.data.guides.sequence %}
+    <li>
+      <a href="/guides/{{ slug }}/">{{ site.data.guides.items[slug].title }}</a>
+    </li>
+  {% endfor %}
+</ul>

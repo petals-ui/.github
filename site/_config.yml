@@ -91,22 +91,26 @@ defaults:
       path: ""
       type: controls
     values:
-      layout: control
+      layout: guide
       css:
         - pages/post
+        - pages/doc
       js:
         - initializers/time
         - initializers/lazyload
+      repo: api
   - scope:
       path: ""
       type: utils
     values:
-      layout: util
+      layout: guide
       css:
         - pages/post
+        - pages/doc
       js:
         - initializers/time
         - initializers/lazyload
+      repo: cookbook
   - scope:
       path: ""
       type: guides
@@ -114,9 +118,11 @@ defaults:
       layout: guide
       css:
         - pages/post
+        - pages/doc
       js:
         - initializers/time
         - initializers/lazyload
+      repo: cookbook
 
 
 

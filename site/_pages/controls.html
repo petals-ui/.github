@@ -1,37 +1,48 @@
 ---
 title: 控件总览
-permalink: /controls/
-comments: false
+layout: guide
+css:
+  - pages/post
+  - pages/doc
+js:
+  - initializers/time
+  - initializers/lazyload
+repo: api
 ---
 
-<section>
-  <h2>虚拟控件</h2>
-  <ul>
-    {% for c in site.data.controls.classified.virtual %}
-      {% assign control = site.data.controls.items[c] %}
-      <li>
-        <a href="/controls/{{ c }}/">{{ control.componentName }} {{ control.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  <h2>实体控件</h2>
-  {% for t in site.data.control-categories.sequence %}
-    {% assign controls = site.data.controls.classified[t] %}
-    {% if t != "virtual" and controls and controls.size %}
-      <h3>{{ site.data.control-categories.items[t].name }} ({{ controls.size }})</h3>
-      <ul>
-        {% for c in controls %}
-          {% assign control = site.data.controls.items[c] %}
-          <li>
-            <a href="/controls/{{ c }}/">{{ control.componentName }} {{ control.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+<h2>虚拟控件</h2>
+<ul>
+  {% for c in site.data.controls.classified.virtual %}
+    {% assign control = site.data.controls.items[c] %}
+    <li>
+      <a href="/controls/{{ c }}/">{{ control.componentName }} {{ control.title }}</a>
+    </li>
   {% endfor %}
-</section>
-
-{% contentfor footer %}
-  {% include widgets/social.html %}
-  {% include widgets/toc.html %}
-{% endcontentfor %}
+</ul>
+<h2>实体控件</h2>
+{% for t in site.data.control-categories.sequence %}
+  {% assign controls = site.data.controls.classified[t] %}
+  {% if t != "virtual" and controls and controls.size %}
+    <h3>{{ site.data.control-categories.items[t].name }} ({{ controls.size }})</h3>
+    <ul>
+      {% for c in controls %}
+        {% assign control = site.data.controls.items[c] %}
+        <li>
+          <a href="/controls/{{ c }}/">{{ control.componentName }} {{ control.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+<h2>结构组件</h2>
+<h3><a href="https://github.com/kokiri-ui" target="_blank" rel="external nofollow">Kokiri</a></h3>
+<p>与 Vue 绑定的<a href="https://ourai.ws/posts/the-system-of-frontend-ui-components/#section-4" target="_blank" rel="external nofollow">结构组件</a>，提供以下既有 UI 组件库的适配包：</p>
+<ul>
+  <li><a href="https://www.npmjs.com/package/@kokiri/adapter-element-ui" target="_blank" rel="external nofollow"><code>@kokiri/adapter-element-ui</code></a></li>
+  <li><a href="https://www.npmjs.com/package/@kokiri/view-ui" target="_blank" rel="external nofollow"><code>@kokiri/view-ui</code></a></li>
+</ul>
+<h3><a href="https://github.com/zora-ui" target="_blank" rel="external nofollow">Zora</a></h3>
+<p>与 React 绑定的<a href="https://ourai.ws/posts/the-system-of-frontend-ui-components/#section-4" target="_blank" rel="external nofollow">结构组件</a>，提供以下既有 UI 组件库的适配包：</p>
+<ul>
+  <li><a href="https://www.npmjs.com/package/@zoras/adapter-ant-design" target="_blank" rel="external nofollow"><code>@zoras/adapter-ant-design</code></a></li>
+</ul>
