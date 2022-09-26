@@ -19,7 +19,6 @@
 | `onSelectionChange` | `(records: Record<string, any>[]) => void` | - | 通过多选框选中行数据时的回调函数，参数是已选中的行数据 |
 | `onCurrentChange` | `(currentPage: number) => void` | - | 当前页发生变化（即翻页）时的回调函数，参数是新的页数 |
 | `onSizeChange` | `(pageSize: number) => void` | - | 每页数据条数发生变化时的回调函数，参数是新的每页条数 |
-{:.table.table-bordered}
 
 ### `columns`
 
@@ -36,4 +35,3 @@
 | `ellipsis` | `boolean` | `false` | 文本在一行内显示，并且超出宽度部分显示省略号，悬停会有工具提示 |
 | `resizable` | `boolean` | `false` | 列是否可以拖拽改变宽度 |
 | `render` | `(info: { row: Record<string, any>; column: ColumnProps; index: number }, renderFunction: CreateElement) => NodeType` | - | 自定义单元格内容，参数为包含行数据、列配置和行索引的对象，在某些环境（如 Vue）中会将渲染函数作为第二个参数传入，返回值类型 `NodeType` 在不同环境中不同——Vue 中是 `VNode`，React 中是 `ReactNode`，以此类推 |
-{:.table.table-bordered}

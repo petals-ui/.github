@@ -11,4 +11,3 @@
 | `disabled` | `boolean` | `false` | 是否禁用 |
 | `nativeType` | `'button' | 'submit' | 'reset'` | `'button'` | HTML 原生的[类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) |
 | `onClick` | `() => void` | - | 单击时的回调函数 |
-{:.table.table-bordered}

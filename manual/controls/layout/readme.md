@@ -15,25 +15,18 @@
 | 属性名 | 值类型/可选值 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `width` | `'none' | 'auto' | number | string` | - |  |
-{:.table.table-bordered}
 
 ### `LayoutHeader`
 
-当卡片头部不止显示标题时使用。
-
 | 属性名 | 值类型/可选值 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `height` | `'none' | 'auto' | number | string` | - |  |
-{:.table.table-bordered}
 
 ### `LayoutFooter`
 
-当卡片头部不止显示标题时使用。
-
 | 属性名 | 值类型/可选值 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `height` | `'none' | 'auto' | number | string` | - |  |
-{:.table.table-bordered}
 
 ## 风格变量
 
@@ -64,4 +57,3 @@
 | `--petals-layout-footer-color` | `$petals--layout-footer-color` |  |  |
 | `--petals-layout-footer-bg` | `$petals--layout-footer-bg` |  |  |
 | `--petals-layout-footer-box-shadow` |  |  |  |
-{:.table.table-bordered}

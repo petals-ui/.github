@@ -13,7 +13,6 @@
 | `direction` | `'horizontal' | 'vertical'` | `'vertical'` | 菜单条目平铺方向 |
 | `subMenuTrigger` | `'hover' | 'click'` | `'hover'` | 子菜单伸缩/弹出的触发方式 |
 | `collapsed` | `boolean` | `false` | 菜单是否收起 |
-{:.table.table-bordered}
 
 ### `NavSubMenu`
 
@@ -24,7 +23,6 @@
 | 属性名 | 值类型/可选值 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `popupClassName` | `string` | - | 子菜单弹出层类名 |
-{:.table.table-bordered}
 
 ### `NavMenuItem`
 
@@ -35,7 +33,6 @@
 | 属性名 | 值类型/可选值 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `href` | `string` | - | 要跳转的目标 URL |
-{:.table.table-bordered}
 
 ### `NavMenuItemGroup`
 
@@ -45,4 +42,3 @@
 | --- | --- | --- | --- |
 | `flag` | `string` | - | 唯一标识 |
 | `title` | `string` | - | 分组标题 |
-{:.table.table-bordered}

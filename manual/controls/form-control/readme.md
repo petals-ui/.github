@@ -13,7 +13,6 @@
 | `disabled` | `boolean` | `false` | 是否禁用 |
 | `readonly` | `boolean` | `false` | 是否只读 |
 | `onChange` | `(value: ValueType) => void` | - | 控件的值发生变化时的回调函数 |
-{:.table.table-bordered}
 
 ### `CheckableFormControl`
 
@@ -24,7 +23,6 @@
 | 属性名 | 值类型/可选值 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `checked` | `boolean` | `false` | 是否选中 |
-{:.table.table-bordered}
 
 ### `InputtableFormControl<ValueType, InputValueType = ValueType>`
 
@@ -38,7 +36,6 @@
 | `clearable` | `boolean` | `true` | 是否可一键清除控件的值 |
 | `size` | `'small' | 'medium' | 'large'` | - | 控件的尺寸 |
 | `onInput` | `(value: InputValueType) => void` | - | 键入字符时的回调函数 |
-{:.table.table-bordered}
 
 ### `TextualFormControl`
 
@@ -50,7 +47,6 @@
 | --- | --- | --- | --- |
 | `minLength` | `number` | - | 可输入的最小长度 |
 | `maxLength` | `number` | - | 可输入的最大长度 |
-{:.table.table-bordered}
 
 ### `NumericFormControl`
 
@@ -63,7 +59,6 @@
 | `min` | `number` | - | 可输入的最小值 |
 | `max` | `number` | - | 可输入的最大值 |
 | `step` | `number` | `1` | 点击增减按钮时改变的步数 |
-{:.table.table-bordered}
 
 ### `DateFormControl<ValueType, PickerOption>`
 
@@ -80,7 +75,6 @@
 | `pickerOption` | `PickerOption` | - | 拾取器选项，详见具体控件 |
 | `popupClassName` | `string` | - | 弹出层的额外 class |
 | `onChange` | `(value: ValueType, date: Date | null) => void` | - | 选择日期发生变化时的回调函数 |
-{:.table.table-bordered}
 
 ### `DateRangeFormControl<ValueType, PickerOption>`
 
@@ -95,4 +89,3 @@
 | `placeholder` | `string[]` | - | 空值时的占位提示文本，数组中第一项为起始值的，第二项为终止值的 |
 | `separator` | `string` | `-` | 起始值与终止值间的分隔符 |
 | `onChange` | `(value: ValueType, dates: (Date | null)[]) => void` | - | 选择日期发生变化时的回调函数 |
-{:.table.table-bordered}

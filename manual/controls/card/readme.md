@@ -9,7 +9,6 @@
 | `title` | `string` | - | 显示在头部中的标题，当子组件中有 `CardHeader` 时失效 |
 | `bodyClassName` | `string` | - | 内容主体容器的自定义 `class` |
 | `bodyStyle` | `{ [key: string]: string }` | - | 内容主体容器的自定义 `style` |
-{:.table.table-bordered}
 
 ### `CardHeader`
 
@@ -19,7 +18,6 @@
 | --- | --- | --- | --- |
 | `title` | `string` | - | 显示在头部中的标题 |
 | `image` | `string` | - | 显示在头部中的图片的 URL，与组件的子组件互斥，只能存在其一 |
-{:.table.table-bordered}
 
 ### `CardFooter`
 

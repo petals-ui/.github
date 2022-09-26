@@ -12,7 +12,6 @@
 | `activeFlag` | `string` | - | 当前激活的菜单条目 |
 | `defaultOpenFlags` | `string[]` | - | 初始展开的子菜单条目 |
 | `openFlags` | `string[]` | - | 当前展开的子菜单条目 |
-{:.table.table-bordered}
 
 ### `MenuItem`
 
@@ -24,4 +23,3 @@
 | `title` | `string` | - | - |
 | `icon` | `string` | - | 文本前的图标 |
 | `disabled` | `boolean` | `false` | 是否禁用 |
-{:.table.table-bordered}

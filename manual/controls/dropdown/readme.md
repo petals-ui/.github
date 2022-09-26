@@ -10,7 +10,6 @@
 | --- | --- | --- | --- |
 | `trigger` | `'hover' | 'click'` | `'hover'` | 菜单弹出的触发方式 |
 | `placement` | `'top-left' | 'top' | 'top-right' | 'bottom-left' | 'bottom' | 'bottom-right'` | `'bottom-left'` | 菜单相对于触发器的弹出位置 |
-{:.table.table-bordered}
 
 ### `DropdownMenu`
 

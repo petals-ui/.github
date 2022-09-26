@@ -9,4 +9,3 @@
 | `rows` | `number` | `3` | 输入框显示行数 |
 | `showWordage` | `boolean` | `false` | 是否显示字数统计 |
 | `resize` | `'horizontal' | 'vertical' | 'both' | 'none'` | - | 对用户可调整输入区域大小进行控制 |
-{:.table.table-bordered}

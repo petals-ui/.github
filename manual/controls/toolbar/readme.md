@@ -13,4 +13,3 @@
 | `content` | `string` | - | 内容部分，显示在左侧并会撑满容器 |
 | `contentClassName` | `string` | - | 内容部分的自定义类名 |
 | `extraClassName` | `string` | - | 额外部分的自定义类名 |
-{:.table.table-bordered}

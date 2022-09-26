@@ -8,7 +8,6 @@
 | --- | --- | --- | --- |
 | `direction` | `'horizontal' | 'vertical'` | `'horizontal'` | 步骤条铺展方向 |
 | `activeFlag` | `number` | `0` | 指定当前步骤，从 `0` 开始记数 |
-{:.table.table-bordered}
 
 ### `Step`
 
@@ -16,4 +15,3 @@
 | --- | --- | --- | --- |
 | `title` | `string` | - | 步骤标题 |
 | `description` | `string` | - | 步骤描述 |
-{:.table.table-bordered}

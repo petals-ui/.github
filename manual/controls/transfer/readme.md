@@ -11,7 +11,6 @@
 | `operationText` | `string[]` | `['', '']` | 操作的文案，数组中第一项为从左到右的，第二项为从右到左的 |
 | `filterable` | `boolean` | `false` | 是否可过滤选项 |
 | `onSelect` | `(sourceSelected: string[], targetSelected: string[]) => void` | - | 选中项发生改变时的回调函数 |
-{:.table.table-bordered}
 
 ### `dataSource`
 
@@ -23,4 +22,3 @@
 | `label` | `string` | - | 显示的文本 |
 | `description` | `string` | - | 描述信息 |
 | `disabled` | `boolean` | `false` | 是否禁用 |
-{:.table.table-bordered}

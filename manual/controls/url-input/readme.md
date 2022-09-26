@@ -26,7 +26,6 @@ authority = [userinfo "@"] host [":" port]
 | --- | --- | --- | --- |
 | `scheme` | `string | string[]` | `'http'` | 使用的方案，详见下方 |
 | `noAuthority` | `boolean` | `false` | 是否没有 `authority` 部分，详见下方 |
-{:.table.table-bordered}
 
 ### `scheme`
 

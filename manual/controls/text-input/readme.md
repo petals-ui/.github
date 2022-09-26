@@ -8,4 +8,3 @@
 | --- | --- | --- | --- |
 | `prefix` | `string | FormControlPrefixAndSuffix` | - | 在控件左边添加的前置内容 |
 | `suffix` | `string | FormControlPrefixAndSuffix` | - | 在控件右边添加的后置内容 |
-{:.table.table-bordered}

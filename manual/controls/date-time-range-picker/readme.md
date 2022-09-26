@@ -10,4 +10,3 @@
 | --- | --- | --- | --- |
 | `disableDate` | `(date: Date) => boolean` | - | 设置不可选择的日期，返回 `true` 会禁用 |
 | `showNow` | `boolean` | `true` | 是否显示「此刻」快捷选择 |
-{:.table.table-bordered}
