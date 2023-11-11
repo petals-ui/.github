@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/petals-ui/.github/issues"
   },
-  "homepage": "https://petals.fxxk.design/",
+  "homepage": "https://petals-ui.github.io/",
   "devDependencies": {
     "handie": "^1.0.8",
     "js-yaml": "^3.14.0"

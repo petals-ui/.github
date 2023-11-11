@@ -11,6 +11,7 @@ end
 desc "部署"
 task :deploy do
   dir = "../../.tmp/fxxk-design-petals"
+  branch = "master"
 
   unless FileTest.directory?("../../.tmp")
     system "mkdir ../../.tmp"
@@ -21,14 +22,14 @@ task :deploy do
 
     cd dir do
       system "git init"
-      system "git remote add origin https://github.com/petals-ui/.github.git"
+      system "git remote add origin https://github.com/petals-ui/petals-ui.github.io.git"
       system "git fetch"
-      system "git checkout gh-pages"
+      system "git checkout #{branch}"
     end
   else
     cd dir do
       # system "git reset --hard HEAD"
-      system "git pull origin gh-pages"
+      system "git pull origin #{branch}"
     end
   end
 
@@ -39,10 +40,11 @@ task :deploy do
     current_time = Time.now.strftime("%Y-%m-%d %H:%M:%S")
 
     system "touch .nojekyll"
-    system "touch CNAME"
-    system "echo petals.fxxk.design > CNAME"
+    system "rm CNAME"
+    # system "touch CNAME"
+    # system "echo petals.fxxk.design > CNAME"
     system "git add -A"
     system "git commit -m 'build: generate on #{current_time}'"
-    system "git push origin gh-pages"
+    system "git push origin #{branch}"
   end
 end
